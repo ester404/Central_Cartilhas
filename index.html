@@ -8,69 +8,56 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Parisienne&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <style>
-  #sidebar,.topbar .hamburger{display:none;}
+  #sidebar,.topbar{display:none;}
   #main{margin-left:0;}
-  .content-wrap{max-width:760px;}
+  .content-wrap{max-width:760px;padding-top:56px;}
 </style>
 </head>
 <body>
 
 <div id="main">
-  <div class="topbar">
-    <div class="crumb">Uso interno · <strong>Central de Cartilhas</strong></div>
-  </div>
-
   <div class="content-wrap">
     <div class="hero-brand"><img src="assets/logo-mega-seguros-badge.jpg" alt="Mega Seguros"><div class="hero-brand-name">MEGA SEGUROS</div></div>
 
     <div class="doc-header">
       <div class="eyebrow">USO INTERNO</div>
       <h1>Central de Cartilhas</h1>
-      <p>Todos os guias de referência dos processos internos, reunidos num só lugar. Escolha a cartilha que precisa consultar.</p>
+      <p>Todos os guias de referência dos processos internos, organizados por setor. Escolha o setor pra ver as cartilhas disponíveis.</p>
       <div class="meta">
-        <span><span class="dot"></span> 4 cartilhas</span>
-        <span><span class="dot"></span> Ester Santos</span>
+        <span><span class="dot"></span> 3 setores</span>
       </div>
     </div>
 
-    <div class="link-grid">
+    <div class="dept-grid">
 
-      <a class="link-card" href="https://ester404.github.io/Cartilha_Passo_a_Passo/" target="_blank">
-        <div class="lc-top"><h3>Finalização de Processos</h3><span class="lc-arrow">→</span></div>
-        <p>Passo a passo de como encerrar corretamente um processo — do fluxo geral aos casos específicos de RRX, Sindicância e Acordo.</p>
-        <span class="lc-tag">Departamento de Notas</span>
+      <a class="dept-card" href="sinistro/">
+        <div class="dc-top"><h2>Sinistro</h2><span class="dc-arrow">→</span></div>
+        <p>Notas, Análise Inicial e Autorização de Reparos Iniciais — todo o fluxo de tratamento e finalização de sinistros.</p>
       </a>
 
-      <a class="link-card" href="https://ester404.github.io/Cartilha_De_Notas/" target="_blank">
-        <div class="lc-top"><h3>Cartilha de Notas</h3><span class="lc-arrow">→</span></div>
-        <p>Guia completo do Setor de Notas — autorizações financeiras, pagamentos, planilhas e fechamento de processos.</p>
-        <span class="lc-tag">Departamento de Notas</span>
-      </a>
+      <div class="dept-card disabled">
+        <div class="dc-top"><h2>Atendimento</h2></div>
+        <p>Cartilhas do setor de Atendimento.</p>
+        <span class="dc-soon">Em breve</span>
+      </div>
 
-      <a class="link-card" href="https://ester404.github.io/Cartilha_De_Analise/" target="_blank">
-        <div class="lc-top"><h3>Análise Inicial</h3><span class="lc-arrow">→</span></div>
-        <p>Passo a passo da análise inicial de sinistros — verificação de irregularidades, pesquisa documental, croqui e planilhas.</p>
-        <span class="lc-tag">Setor de Sinistros</span>
-      </a>
-
-      <a class="link-card" href="https://ester404.github.io/Cartilha_De_Autorizacao_Reparos/" target="_blank">
-        <div class="lc-top"><h3>Autorização de Reparos Iniciais</h3><span class="lc-arrow">→</span></div>
-        <p>Processo de autorização de reparos iniciais junto às oficinas conveniadas — modelo de e-mail, documento e planilhas.</p>
-        <span class="lc-tag">Setor de Sinistros</span>
-      </a>
+      <div class="dept-card disabled">
+        <div class="dc-top"><h2>Cadastro</h2></div>
+        <p>Cartilhas do setor de Cadastro.</p>
+        <span class="dc-soon">Em breve</span>
+      </div>
 
     </div>
 
     <footer class="closing">
-<div class="sig">Central Cartilhas</div>
-<div class="role">MEGA SEGUROS · CENTRAL DE CARTILHAS</div>
+<div class="sig">Central de Cartilhas</div>
+<div class="role">MEGA SEGUROS</div>
 <div class="tag">Uso interno · Organização, atenção e agilidade que geram confiança.</div>
 </footer>
   </div>
 </div>
 
 <script>
-  // Força redesenho assim que as fontes customizadas terminarem de carregar
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(function(){
       document.body.style.opacity = '0.999999';

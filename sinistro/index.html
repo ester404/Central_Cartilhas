@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Central de Cartilhas | Mega Seguros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  #sidebar,.topbar{display:none;}
+  #main{margin-left:0;}
+  .content-wrap{max-width:760px;padding-top:56px;}
+</style>
+</head>
+<body>
+
+<div id="main">
+  <div class="content-wrap">
+    <div class="hero-brand"><img src="../assets/logo-mega-seguros-badge.jpg" alt="Mega Seguros"><div class="hero-brand-name">MEGA SEGUROS</div></div>
+
+    <a href="../" style="display:inline-block;margin-bottom:24px;color:var(--tan);font-size:14px;font-weight:700;text-decoration:none;">← Central de Cartilhas</a>
+
+    <div class="doc-header">
+      <div class="eyebrow">USO INTERNO</div>
+      <h1>Departamento de Sinistro</h1>
+      <p>Central de cartilhas organizadas por setor. Escolha o setor pra ver as cartilhas disponíveis.</p>
+      <div class="meta">
+        <span><span class="dot"></span> 3 setores</span>
+        <span><span class="dot"></span> 4 cartilhas</span>
+      </div>
+    </div>
+
+    <div class="setor-grid">
+
+      <div class="setor-card" id="setor-notas">
+        <button class="setor-header" onclick="toggleSetor('setor-notas')">
+          <div><h2>Notas</h2><div class="setor-count">2 cartilhas</div></div>
+          <span class="setor-chevron">⌄</span>
+        </button>
+        <div class="setor-body">
+          <a class="link-card" href="https://ester404.github.io/Cartilha_De_Notas/" target="_blank">
+            <div class="lc-top"><h3>Cartilha de Notas</h3><span class="lc-arrow">→</span></div>
+            <p>Guia completo do Setor de Notas — autorizações financeiras, pagamentos, planilhas e fechamento de processos.</p>
+          </a>
+          <a class="link-card" href="https://ester404.github.io/Cartilha_Passo_a_Passo/" target="_blank">
+            <div class="lc-top"><h3>Finalização de Processos</h3><span class="lc-arrow">→</span></div>
+            <p>Passo a passo de como encerrar corretamente um processo — do fluxo geral aos casos específicos de RRX, Sindicância e Acordo.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="setor-card" id="setor-analise">
+        <button class="setor-header" onclick="toggleSetor('setor-analise')">
+          <div><h2>Análise Inicial</h2><div class="setor-count">1 cartilha</div></div>
+          <span class="setor-chevron">⌄</span>
+        </button>
+        <div class="setor-body">
+          <a class="link-card" href="https://ester404.github.io/Cartilha_De_Analise/" target="_blank">
+            <div class="lc-top"><h3>Análise Inicial</h3><span class="lc-arrow">→</span></div>
+            <p>Passo a passo da análise inicial de sinistros — verificação de irregularidades, pesquisa documental, croqui e planilhas.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="setor-card" id="setor-reparos">
+        <button class="setor-header" onclick="toggleSetor('setor-reparos')">
+          <div><h2>Autorização de Reparos Iniciais</h2><div class="setor-count">1 cartilha</div></div>
+          <span class="setor-chevron">⌄</span>
+        </button>
+        <div class="setor-body">
+          <a class="link-card" href="https://ester404.github.io/Cartilha_De_Autorizacao_Reparos/" target="_blank">
+            <div class="lc-top"><h3>Autorização de Reparos Iniciais</h3><span class="lc-arrow">→</span></div>
+            <p>Processo de autorização de reparos iniciais junto às oficinas conveniadas — modelo de e-mail, documento e planilhas.</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="closing">
+<div class="sig">Central de Cartilhas</div>
+<div class="role">MEGA SEGUROS · DEPARTAMENTO DE SINISTRO</div>
+<div class="tag">Uso interno · Organização, atenção e agilidade que geram confiança.</div>
+</footer>
+  </div>
+</div>
+
+<script>
+  function toggleSetor(id){
+    var card = document.getElementById(id);
+    card.classList.toggle('open');
+  }
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function(){
+      document.body.style.opacity = '0.999999';
+      requestAnimationFrame(function(){ document.body.style.opacity = '1'; });
+    });
+  }
+</script>
+
+</body>
+</html>
