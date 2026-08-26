@@ -149,18 +149,15 @@
   .setor-body .link-card{margin-top:14px;}
   .setor-body .link-card:first-child{margin-top:0;}
 
-  .dept-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:32px;}
-  .dept-card{display:block;background:var(--cream-card);border:1px solid var(--border);border-radius:14px;padding:26px 28px;text-decoration:none;transition:border-color .15s ease, transform .15s ease, box-shadow .15s ease;}
-  .dept-card:hover{border-color:var(--tan);transform:translateY(-2px);box-shadow:0 10px 24px rgba(18,63,58,.10);}
-  .dept-card .dc-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px;}
-  .dept-card h2{font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:var(--wine);margin:0;}
-  .dept-card .dc-arrow{font-size:22px;color:var(--tan);flex-shrink:0;transition:transform .15s ease;}
-  .dept-card:hover .dc-arrow{transform:translateX(4px);}
-  .dept-card p{margin:0;color:var(--gray);font-size:15px;line-height:1.55;}
-  .dept-card.disabled{cursor:default;opacity:.55;}
-  .dept-card.disabled:hover{border-color:var(--border);transform:none;box-shadow:none;}
-  .dept-card.disabled .dc-arrow{display:none;}
-  .dept-card .dc-soon{display:inline-block;margin-top:12px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--tan);}
+  .dept-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(150px, 1fr));gap:16px;margin-top:32px;}
+  .dept-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;aspect-ratio:1/1;background:var(--cream-card);border:1px solid var(--border);border-radius:16px;padding:16px;text-decoration:none;transition:border-color .15s ease, transform .15s ease, box-shadow .15s ease;}
+  .dept-tile:hover{border-color:var(--tan);transform:translateY(-3px);box-shadow:0 10px 24px rgba(18,63,58,.10);}
+  .dept-tile .dt-badge{width:44px;height:44px;border-radius:50%;background:var(--wine);color:var(--cream);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:18px;margin-bottom:12px;}
+  .dept-tile h2{font-family:'Playfair Display',serif;font-weight:700;font-size:16px;color:var(--wine);margin:0 0 4px;line-height:1.25;}
+  .dept-tile p{margin:0;color:var(--gray);font-size:12px;}
+  .dept-tile.disabled{cursor:default;opacity:.5;}
+  .dept-tile.disabled:hover{border-color:var(--border);transform:none;box-shadow:none;}
+  .dept-tile.disabled .dt-badge{background:var(--gray);}
   .item{margin:0 0 56px;scroll-margin-top:90px;}
   .item-num{font-family:'Playfair Display',serif;font-weight:700;color:var(--tan);font-size:13px;letter-spacing:1.5px;margin-bottom:6px;}
   .item-title{color:var(--wine);font-size:clamp(20px,3vw,25px);margin-bottom:16px;}
