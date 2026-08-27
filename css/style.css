@@ -170,27 +170,7 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif;margin:0;color:var(--wine);}
   filter:drop-shadow(0 24px 30px rgba(10,43,39,.18));
 }
 
-/* Corner accents — cantinho discreto recortado da sua assinatura de
-   e-mail, com fundo removido de verdade (transparência real, não
-   cor batendo por coincidência). Nada de faixa grande: só um toque
-   no canto, do mesmo jeito da assinatura. */
-.corner-accent{
-  position:absolute;
-  pointer-events:none;
-  z-index:1;
-  height:auto;
-  display:block;
-}
-.corner-accent.cream-tl{
-  top:0;left:0;
-  width:150px;
-  transform:scaleX(-1);
-}
-.corner-accent.dark-br{
-  right:0;bottom:0;
-  width:130px;
-  transform:scaleX(-1);
-}
+
 
 /* =========================== DEPT GRID =========================== */
 .section{
@@ -561,10 +541,12 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif;margin:0;color:var(--wine);}
   .navlinks a{width:100%;padding:14px 24px;border-bottom:1px solid var(--border);}
   .nav-hamburger{display:block;}
   .hero-inner{grid-template-columns:1fr;text-align:left;}
-  .corner-accent{width:90px;}
   .hero-art{order:-1;max-width:220px;margin:0 auto;}
   .hero h1{font-size:2rem;}
   .central-banner,.central-banner-dark{flex-wrap:wrap;}
   .cb-divider{display:none;}
   .watermark-m{width:220px;opacity:.7;}
+  .footer-inner{flex-direction:column;align-items:flex-start;gap:16px;}
+  .footer-divider{display:none;}
+  .footer-social{gap:14px 22px;}
 }
