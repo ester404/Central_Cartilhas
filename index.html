@@ -3,68 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Central de Cartilhas | Mega Seguros</title>
+<meta name="robots" content="noindex, nofollow">
+<title>Central de Cartilhas · Mega Seguros</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Parisienne&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Karla:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Parisienne&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<style>
-  #sidebar,.topbar{display:none;}
-  #main{margin-left:0;}
-  .content-wrap{max-width:760px;padding-top:56px;}
-</style>
 </head>
 <body>
 
-<div id="main">
-  <div class="content-wrap">
-    <div class="hero-brand"><img src="assets/logo-mega-seguros-badge.jpg" alt="Mega Seguros"><div class="hero-brand-name">MEGA SEGUROS</div></div>
-
-    <div class="doc-header">
-      <div class="eyebrow">USO INTERNO</div>
-      <p>Todos os guias de referência dos processos internos, organizados por setor. Escolha o setor pra ver as cartilhas disponíveis.</p>
-      <div class="meta">
-        <span><span class="dot"></span> 3 setores</span>
+<header class="navbar">
+  <div class="navbar-inner">
+    <div class="brand-lockup">
+      <img src="assets/logo-m-3d.png" alt="Mega Seguros">
+      <div class="brand-text">
+        <span class="b1">MEGA</span>
+        <span class="b2">SEGUROS</span>
+        <span class="b3">SEGURO MAIS ACESSÍVEL PARA TODOS</span>
       </div>
     </div>
-
-    <div class="dept-grid">
-
-      <a class="dept-tile" href="sinistro/">
-        <div class="dt-badge">S</div>
-        <h2>Sinistro</h2>
-        <p>3 sub-setores</p>
-      </a>
-
-      <div class="dept-tile disabled">
-        <div class="dt-badge">A</div>
-        <h2>Atendimento</h2>
-        <p>Em breve</p>
-      </div>
-
-      <div class="dept-tile disabled">
-        <div class="dt-badge">C</div>
-        <h2>Cadastro</h2>
-        <p>Em breve</p>
-      </div>
-
-    </div>
-
-    <footer class="closing">
-<div class="sig">Central de Cartilhas</div>
-<div class="role">MEGA SEGUROS</div>
-<div class="tag">Uso interno · Organização, atenção e agilidade que geram confiança.</div>
-</footer>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="navlinks" id="navLinks">
+      <a href="index.html" class="active">Início</a>
+      <a href="sinistro/index.html">Sinistros</a>
+      <a href="#" onclick="return false;" style="opacity:.5;cursor:default;">Atendimento</a>
+      <a href="#" onclick="return false;" style="opacity:.5;cursor:default;">Cadastro</a>
+    </nav>
   </div>
-</div>
+</header>
 
-<script>
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(function(){
-      document.body.style.opacity = '0.999999';
-      requestAnimationFrame(function(){ document.body.style.opacity = '1'; });
-    });
-  }
-</script>
+<section class="hero">
+  <img class="corner-ribbon top-left" src="assets/faixa-canto-quadrado.png" alt="">
+  <img class="corner-ribbon bottom-left" src="assets/faixa-canto-quadrado.png" alt="">
+  <div class="hero-inner">
+    <div>
+      <h1>Uso interno.<br>Organização que gera confiança.</h1>
+      <hr class="hero-rule">
+      <p>Consulte as cartilhas e orientações dos processos internos organizados por setor.</p>
+    </div>
+    <div class="hero-art">
+      <img src="assets/logo-m-3d.png" alt="Mega Seguros">
+    </div>
+  </div>
+</section>
 
+<main class="section">
+
+  <div class="dept-grid">
+    <a class="dept-tile active card-hit" href="sinistro/index.html">
+      <div class="dt-badge">S</div>
+      <div class="dt-name">Sinistros</div>
+      <div class="dt-sub">3 sub-setores</div>
+      <hr class="dt-rule">
+      <span class="dt-link">Acessar
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+
+    <div class="dept-tile disabled">
+      <div class="dt-badge">A</div>
+      <div class="dt-name">Atendimento</div>
+      <div class="dt-sub">Em breve</div>
+      <hr class="dt-rule">
+      <span class="dt-link">Em breve
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </div>
+
+    <div class="dept-tile disabled">
+      <div class="dt-badge">C</div>
+      <div class="dt-name">Cadastro</div>
+      <div class="dt-sub">Em breve</div>
+      <hr class="dt-rule">
+      <span class="dt-link">Em breve
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </div>
+  </div>
+
+  <div class="central-banner">
+    <div class="cb-icon">
+      <svg viewBox="0 0 24 24"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5A1.5 1.5 0 014 18.5v-13zM20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5a1.5 1.5 0 001.5-1.5v-13z"/></svg>
+    </div>
+    <div class="cb-text">
+      <h3>Central de Cartilhas</h3>
+      <p>Acesse as cartilhas e documentos internos organizados por setor e processo.</p>
+    </div>
+    <div class="cb-divider"></div>
+    <a class="cb-action" href="sinistro/index.html">Acessar cartilhas
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <img class="corner-ribbon footer-br" src="assets/faixa-canto-arredondado.png" alt="">
+  <div class="footer-inner">
+    <div class="brand-lockup">
+      <img src="assets/logo-m-3d.png" alt="Mega Seguros" style="width:44px;">
+      <div class="brand-text" style="line-height:1;">
+        <span class="b1" style="font-size:1.1rem;">MEGA</span>
+        <span class="b2" style="font-size:1.1rem;">SEGUROS</span>
+        <span class="b3">SEGURO MAIS ACESSÍVEL PARA TODOS</span>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-social">
+      <a href="#" onclick="return false;">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9z"/></svg>
+        megasegurosoficial.com.br
+      </a>
+      <a href="#" onclick="return false;">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        @megasegurosoficial
+      </a>
+      <a href="#" onclick="return false;">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4.5a2 2 0 014 0V17M11 10v7"/></svg>
+        megasegurosoficial.com.br
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
