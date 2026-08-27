@@ -385,14 +385,6 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif;margin:0;color:var(--wine);}
   color:var(--wine);
 }
 
-.watermark-m{
-  position:absolute;
-  top:0;right:0;
-  width:340px;
-  z-index:0;
-  pointer-events:none;
-}
-
 .breadcrumb{
   display:inline-flex;
   align-items:center;
@@ -545,7 +537,6 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif;margin:0;color:var(--wine);}
   .hero h1{font-size:2rem;}
   .central-banner,.central-banner-dark{flex-wrap:wrap;}
   .cb-divider{display:none;}
-  .watermark-m{width:220px;opacity:.7;}
   .footer-inner{flex-direction:column;align-items:flex-start;gap:16px;}
   .footer-divider{display:none;}
   .footer-social{gap:14px 22px;}
