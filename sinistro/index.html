@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Central de Cartilhas | Mega Seguros</title>
+<title>Departamento de Sinistro | Central de Cartilhas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Parisienne&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
@@ -32,50 +32,49 @@
     </div>
 
     <div class="setor-grid">
+      <button class="setor-tile" id="tile-notas" onclick="selectSetor('notas')">
+        <div class="st-badge">N</div>
+        <h2>Notas</h2>
+        <p>2 cartilhas</p>
+      </button>
+      <button class="setor-tile" id="tile-analise" onclick="selectSetor('analise')">
+        <div class="st-badge">A</div>
+        <h2>Análise Inicial</h2>
+        <p>1 cartilha</p>
+      </button>
+      <button class="setor-tile" id="tile-reparos" onclick="selectSetor('reparos')">
+        <div class="st-badge">R</div>
+        <h2>Autorização de Reparos</h2>
+        <p>1 cartilha</p>
+      </button>
+    </div>
 
-      <div class="setor-card" id="setor-notas">
-        <button class="setor-header" onclick="toggleSetor('setor-notas')">
-          <div><h2>Notas</h2><div class="setor-count">2 cartilhas</div></div>
-          <span class="setor-chevron">⌄</span>
-        </button>
-        <div class="setor-body">
-          <a class="link-card" href="https://ester404.github.io/Cartilha_De_Notas/" target="_blank">
-            <div class="lc-top"><h3>Cartilha de Notas</h3><span class="lc-arrow">→</span></div>
-            <p>Guia completo do Setor de Notas — autorizações financeiras, pagamentos, planilhas e fechamento de processos.</p>
-          </a>
-          <a class="link-card" href="https://ester404.github.io/Cartilha_Passo_a_Passo/" target="_blank">
-            <div class="lc-top"><h3>Finalização de Processos</h3><span class="lc-arrow">→</span></div>
-            <p>Passo a passo de como encerrar corretamente um processo — do fluxo geral aos casos específicos de RRX, Sindicância e Acordo.</p>
-          </a>
-        </div>
-      </div>
+    <div class="setor-panel" id="panel-notas">
+      <h3 class="sp-title">Notas</h3>
+      <a class="link-card" href="https://ester404.github.io/Cartilha_De_Notas/" target="_blank">
+        <div class="lc-top"><h3>Cartilha de Notas</h3><span class="lc-arrow">→</span></div>
+        <p>Guia completo do Setor de Notas — autorizações financeiras, pagamentos, planilhas e fechamento de processos.</p>
+      </a>
+      <a class="link-card" href="https://ester404.github.io/Cartilha_Passo_a_Passo/" target="_blank">
+        <div class="lc-top"><h3>Finalização de Processos</h3><span class="lc-arrow">→</span></div>
+        <p>Passo a passo de como encerrar corretamente um processo — do fluxo geral aos casos específicos de RRX, Sindicância e Acordo.</p>
+      </a>
+    </div>
 
-      <div class="setor-card" id="setor-analise">
-        <button class="setor-header" onclick="toggleSetor('setor-analise')">
-          <div><h2>Análise Inicial</h2><div class="setor-count">1 cartilha</div></div>
-          <span class="setor-chevron">⌄</span>
-        </button>
-        <div class="setor-body">
-          <a class="link-card" href="https://ester404.github.io/Cartilha_De_Analise/" target="_blank">
-            <div class="lc-top"><h3>Análise Inicial</h3><span class="lc-arrow">→</span></div>
-            <p>Passo a passo da análise inicial de sinistros — verificação de irregularidades, pesquisa documental, croqui e planilhas.</p>
-          </a>
-        </div>
-      </div>
+    <div class="setor-panel" id="panel-analise">
+      <h3 class="sp-title">Análise Inicial</h3>
+      <a class="link-card" href="https://ester404.github.io/Cartilha_De_Analise/" target="_blank">
+        <div class="lc-top"><h3>Análise Inicial</h3><span class="lc-arrow">→</span></div>
+        <p>Passo a passo da análise inicial de sinistros — verificação de irregularidades, pesquisa documental, croqui e planilhas.</p>
+      </a>
+    </div>
 
-      <div class="setor-card" id="setor-reparos">
-        <button class="setor-header" onclick="toggleSetor('setor-reparos')">
-          <div><h2>Autorização de Reparos Iniciais</h2><div class="setor-count">1 cartilha</div></div>
-          <span class="setor-chevron">⌄</span>
-        </button>
-        <div class="setor-body">
-          <a class="link-card" href="https://ester404.github.io/Cartilha_De_Autorizacao_Reparos/" target="_blank">
-            <div class="lc-top"><h3>Autorização de Reparos Iniciais</h3><span class="lc-arrow">→</span></div>
-            <p>Processo de autorização de reparos iniciais junto às oficinas conveniadas — modelo de e-mail, documento e planilhas.</p>
-          </a>
-        </div>
-      </div>
-
+    <div class="setor-panel" id="panel-reparos">
+      <h3 class="sp-title">Autorização de Reparos Iniciais</h3>
+      <a class="link-card" href="https://ester404.github.io/Cartilha_De_Autorizacao_Reparos/" target="_blank">
+        <div class="lc-top"><h3>Autorização de Reparos Iniciais</h3><span class="lc-arrow">→</span></div>
+        <p>Processo de autorização de reparos iniciais junto às oficinas conveniadas — modelo de e-mail, documento e planilhas.</p>
+      </a>
     </div>
 
     <footer class="closing">
@@ -87,9 +86,13 @@
 </div>
 
 <script>
-  function toggleSetor(id){
-    var card = document.getElementById(id);
-    card.classList.toggle('open');
+  function selectSetor(id){
+    document.querySelectorAll('.setor-tile').forEach(function(t){ t.classList.remove('active'); });
+    document.querySelectorAll('.setor-panel').forEach(function(p){ p.classList.remove('show'); });
+    document.getElementById('tile-'+id).classList.add('active');
+    var panel = document.getElementById('panel-'+id);
+    panel.classList.add('show');
+    panel.scrollIntoView({behavior:'smooth', block:'nearest'});
   }
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(function(){
