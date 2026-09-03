@@ -7,7 +7,7 @@
 <title>Departamento de Sinistro · Central de Cartilhas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Karla:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Parisienne&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css?v=9">
+<link rel="stylesheet" href="../css/style.css?v=10">
 </head>
 <body>
 
@@ -31,8 +31,8 @@
     <h1>Departamento de Sinistro</h1>
     <p>Central de cartilhas organizadas por setor. Escolha o setor pra ver as cartilhas disponíveis.</p>
     <div class="meta-dots">
-      <span><span class="dot">●</span>5 setores</span>
-      <span><span class="dot">●</span>6 cartilhas</span>
+      <span><span class="dot">●</span>6 setores</span>
+      <span><span class="dot">●</span>7 cartilhas</span>
     </div>
   </div>
 
@@ -80,6 +80,16 @@
     <div class="setor-tile" data-setor="despachante" onclick="selectSetor('despachante')">
       <div class="st-badge">D</div>
       <div class="st-name">Despachante</div>
+      <div class="st-sub">1 cartilha</div>
+      <hr class="st-rule">
+      <span class="st-link">
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </div>
+
+    <div class="setor-tile" data-setor="atendimento" onclick="selectSetor('atendimento')">
+      <div class="st-badge">A</div>
+      <div class="st-name">Atendimento</div>
       <div class="st-sub">1 cartilha</div>
       <hr class="st-rule">
       <span class="st-link">
@@ -137,6 +147,16 @@
     <div class="link-cards">
       <a class="link-card" href="https://ester404.github.io/Cartilha_De_Despachante/" target="_blank" rel="noopener">
         <div class="lc-text"><strong>Cartilha de Despachante</strong><span>Multas, custos, veículos recuperados e indenizados</span></div>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="setor-panel" id="panel-atendimento">
+    <h4>Atendimento</h4>
+    <div class="link-cards">
+      <a class="link-card" href="https://ester404.github.io/Cartilha_De_Atendimento_Sinistro/" target="_blank" rel="noopener">
+        <div class="lc-text"><strong>Cartilha de Atendimento</strong><span>Perda parcial: abertura, cadastro no Hinova, regulagem e negociação</span></div>
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
