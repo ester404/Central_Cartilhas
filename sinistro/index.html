@@ -7,7 +7,7 @@
 <title>Departamento de Sinistro · Central de Cartilhas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Karla:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Parisienne&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css?v=10">
+<link rel="stylesheet" href="../css/style.css?v=11">
 </head>
 <body>
 
@@ -36,63 +36,74 @@
     </div>
   </div>
 
+  <div class="setor-search">
+    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input type="text" id="setorSearch" placeholder="Pesquisar cartilha..." oninput="filterSetores(this.value)">
+  </div>
+
   <div class="setor-grid" id="setorGrid">
     <div class="setor-tile" data-setor="notas" onclick="selectSetor('notas')">
-      <div class="st-badge">N</div>
+      <div class="st-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 9H13V3.5zM8 13h8v1.5H8V13zm0 3h8v1.5H8V16zm0-6h4v1.5H8V10z"/></svg></div>
       <div class="st-name">Notas</div>
       <div class="st-sub">2 cartilhas</div>
+      <p class="st-desc">Documentos e anotações essenciais.</p>
       <hr class="st-rule">
-      <span class="st-link">
+      <span class="st-link">Acessar
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
     </div>
 
     <div class="setor-tile" data-setor="analise" onclick="selectSetor('analise')">
-      <div class="st-badge">A</div>
+      <div class="st-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 2a8 8 0 105.29 14.03l4.34 4.34 1.42-1.42-4.34-4.34A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg></div>
       <div class="st-name">Análise Inicial</div>
       <div class="st-sub">1 cartilha</div>
+      <p class="st-desc">Procedimentos da análise inicial do sinistro.</p>
       <hr class="st-rule">
-      <span class="st-link">
+      <span class="st-link">Acessar
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
     </div>
 
     <div class="setor-tile" data-setor="reparos" onclick="selectSetor('reparos')">
-      <div class="st-badge">R</div>
+      <div class="st-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.7 15.88l-4.24-4.24a5.5 5.5 0 00-6.94-6.94L13 7.17 10.17 10 7.7 7.53 4.24 11a5.5 5.5 0 006.94 6.94l4.24 4.24a1 1 0 001.41 0l2.83-2.83a1 1 0 000-1.41z"/></svg></div>
       <div class="st-name">Autorização de Reparos</div>
       <div class="st-sub">1 cartilha</div>
+      <p class="st-desc">Regras e diretrizes para autorização de reparos.</p>
       <hr class="st-rule">
-      <span class="st-link">
+      <span class="st-link">Acessar
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
     </div>
 
     <div class="setor-tile" data-setor="reembolso" onclick="selectSetor('reembolso')">
-      <div class="st-badge">R</div>
+      <div class="st-badge st-badge-text">$</div>
       <div class="st-name">Reembolso</div>
       <div class="st-sub">1 cartilha</div>
+      <p class="st-desc">Orientações sobre processos de reembolso.</p>
       <hr class="st-rule">
-      <span class="st-link">
+      <span class="st-link">Acessar
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
     </div>
 
     <div class="setor-tile" data-setor="despachante" onclick="selectSetor('despachante')">
-      <div class="st-badge">D</div>
+      <div class="st-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 11l1.5-4.5A2 2 0 018.4 5h7.2a2 2 0 011.9 1.5L19 11h.5A1.5 1.5 0 0121 12.5V17a1 1 0 01-1 1h-1a2 2 0 01-4 0H9a2 2 0 01-4 0H4a1 1 0 01-1-1v-4.5A1.5 1.5 0 014.5 11H5zm2.1-4l-1 4h11.8l-1-4a.5.5 0 00-.48-.35H7.58a.5.5 0 00-.48.35zM6.5 14a1 1 0 100 2 1 1 0 000-2zm11 0a1 1 0 100 2 1 1 0 000-2z"/></svg></div>
       <div class="st-name">Despachante</div>
       <div class="st-sub">1 cartilha</div>
+      <p class="st-desc">Procedimentos e informações para despacho de sinistros.</p>
       <hr class="st-rule">
-      <span class="st-link">
+      <span class="st-link">Acessar
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
     </div>
 
     <div class="setor-tile" data-setor="atendimento" onclick="selectSetor('atendimento')">
-      <div class="st-badge">A</div>
+      <div class="st-badge"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8v1H4v-1z"/></svg></div>
       <div class="st-name">Atendimento</div>
       <div class="st-sub">1 cartilha</div>
+      <p class="st-desc">Diretrizes para atendimento ao cliente e acompanhamento.</p>
       <hr class="st-rule">
-      <span class="st-link">
+      <span class="st-link">Acessar
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
     </div>
@@ -175,6 +186,6 @@
 
 </main>
 
-<script src="../js/script.js?v=9"></script>
+<script src="../js/script.js?v=11"></script>
 </body>
 </html>

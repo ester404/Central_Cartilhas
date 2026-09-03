@@ -240,6 +240,15 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif;margin:0;color:var(--wine);}
   background:var(--wine-dark);
   color:#fff;
 }
+.st-badge svg{width:24px;height:24px;fill:#fff;}
+.st-badge.st-badge-text{font-family:'Karla',sans-serif;font-size:1.4rem;}
+.dt-badge img{width:28px;height:28px;object-fit:contain;}
+.st-desc{
+  font-size:.88rem;
+  color:var(--gray);
+  line-height:1.5;
+  margin:0 0 2px;
+}
 .dt-name, .st-name{
   font-size:1.25rem;
   font-weight:600;
@@ -424,6 +433,37 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif;margin:0;color:var(--wine);}
 .meta-dots .dot{color:var(--tan);font-size:1rem;}
 
 /* =========================== SETOR GRID / PANEL =========================== */
+.setor-search{
+  position:relative;
+  margin:8px 0 0;
+}
+.setor-search svg{
+  position:absolute;
+  left:18px;top:50%;
+  transform:translateY(-50%);
+  width:18px;height:18px;
+  stroke:var(--gray);
+  fill:none;
+  stroke-width:2;
+  pointer-events:none;
+}
+.setor-search input{
+  width:100%;
+  padding:14px 18px 14px 48px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:var(--cream-card);
+  font-family:'Karla',sans-serif;
+  font-size:.95rem;
+  color:var(--text);
+}
+.setor-search input:focus{
+  outline:none;
+  border-color:var(--tan);
+}
+.setor-search input::placeholder{color:var(--gray);}
+.setor-tile.st-hidden{display:none;}
+
 .setor-grid{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(220px,1fr));

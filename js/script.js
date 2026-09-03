@@ -35,3 +35,14 @@ function selectSetor(id) {
     }, 80);
   }
 }
+
+// ===== Busca de cartilha (página de departamento) =====
+function filterSetores(query) {
+  const q = query.trim().toLowerCase();
+  document.querySelectorAll('.setor-tile').forEach(tile => {
+    const name = (tile.querySelector('.st-name')?.textContent || '').toLowerCase();
+    const desc = (tile.querySelector('.st-desc')?.textContent || '').toLowerCase();
+    const match = !q || name.includes(q) || desc.includes(q);
+    tile.classList.toggle('st-hidden', !match);
+  });
+}
