@@ -311,6 +311,7 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif;margin:0;color:var(--wine);}
   flex-shrink:0;
 }
 .cb-icon svg{width:24px;height:24px;stroke:var(--tan-light);fill:none;stroke-width:1.6;}
+.cb-icon-img{width:26px;height:26px;object-fit:contain;}
 .cb-text{flex:1;min-width:200px;}
 .cb-text h3{font-size:1.15rem;font-weight:700;}
 .cb-text p{margin:4px 0 0;color:var(--gray);font-size:.92rem;}
