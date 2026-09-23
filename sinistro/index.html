@@ -7,7 +7,7 @@
 <title>Departamento de Sinistro · Central de Cartilhas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Karla:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Parisienne&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css?v=19">
+<link rel="stylesheet" href="../css/style.css?v=21">
 </head>
 <body class="sinistro-page">
 
@@ -53,7 +53,7 @@
       </span>
     </div>
 
-    <div class="setor-tile" data-setor="analise" onclick="selectSetor('analise')">
+    <a class="setor-tile" href="https://ester404.github.io/Cartilha_De_Analise/" target="_blank" rel="noopener">
       <div class="st-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 2a8 8 0 105.29 14.03l4.34 4.34 1.42-1.42-4.34-4.34A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg></div>
       <div class="st-name">Análise Inicial</div>
       <div class="st-sub">1 cartilha</div>
@@ -62,9 +62,9 @@
       <span class="st-link">Acessar
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
-    </div>
+    </a>
 
-    <div class="setor-tile" data-setor="reparos" onclick="selectSetor('reparos')">
+    <a class="setor-tile" href="https://ester404.github.io/Cartilha_De_Autorizacao_Reparos/" target="_blank" rel="noopener">
       <div class="st-badge st-badge-img"><img src="../assets/icon-reparos.png" alt=""></div>
       <div class="st-name">Autorização de Reparos</div>
       <div class="st-sub">1 cartilha</div>
@@ -73,9 +73,9 @@
       <span class="st-link">Acessar
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
-    </div>
+    </a>
 
-    <div class="setor-tile" data-setor="reembolso" onclick="selectSetor('reembolso')">
+    <a class="setor-tile" href="https://ester404.github.io/Cartilha_De_Reembolso/" target="_blank" rel="noopener">
       <div class="st-badge st-badge-text">$</div>
       <div class="st-name">Reembolso</div>
       <div class="st-sub">1 cartilha</div>
@@ -84,9 +84,9 @@
       <span class="st-link">Acessar
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
-    </div>
+    </a>
 
-    <div class="setor-tile" data-setor="despachante" onclick="selectSetor('despachante')">
+    <a class="setor-tile" href="https://ester404.github.io/Cartilha_De_Despachante/" target="_blank" rel="noopener">
       <div class="st-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 11l1.5-4.5A2 2 0 018.4 5h7.2a2 2 0 011.9 1.5L19 11h.5A1.5 1.5 0 0121 12.5V17a1 1 0 01-1 1h-1a2 2 0 01-4 0H9a2 2 0 01-4 0H4a1 1 0 01-1-1v-4.5A1.5 1.5 0 014.5 11H5zm2.1-4l-1 4h11.8l-1-4a.5.5 0 00-.48-.35H7.58a.5.5 0 00-.48.35zM6.5 14a1 1 0 100 2 1 1 0 000-2zm11 0a1 1 0 100 2 1 1 0 000-2z"/></svg></div>
       <div class="st-name">Despachante</div>
       <div class="st-sub">1 cartilha</div>
@@ -95,9 +95,9 @@
       <span class="st-link">Acessar
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
-    </div>
+    </a>
 
-    <div class="setor-tile" data-setor="atendimento" onclick="selectSetor('atendimento')">
+    <a class="setor-tile" href="https://ester404.github.io/Cartilha_De_Atendimento_Sinistro/" target="_blank" rel="noopener">
       <div class="st-badge"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8v1H4v-1z"/></svg></div>
       <div class="st-name">Atendimento</div>
       <div class="st-sub">1 cartilha</div>
@@ -106,7 +106,7 @@
       <span class="st-link">Acessar
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </span>
-    </div>
+    </a>
   </div>
 
   <div class="setor-panel" id="panel-notas">
@@ -118,56 +118,6 @@
       </a>
       <a class="link-card" href="https://ester404.github.io/Cartilha_Passo_a_Passo/" target="_blank" rel="noopener">
         <div class="lc-text"><strong>Finalização de Processos</strong><span>Fluxo geral e casos específicos</span></div>
-        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-
-  <div class="setor-panel" id="panel-analise">
-    <h4>Análise Inicial</h4>
-    <div class="link-cards">
-      <a class="link-card" href="https://ester404.github.io/Cartilha_De_Analise/" target="_blank" rel="noopener">
-        <div class="lc-text"><strong>Análise Inicial</strong><span>Verificação, oitiva, croqui e rastreador</span></div>
-        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-
-  <div class="setor-panel" id="panel-reparos">
-    <h4>Autorização de Reparos</h4>
-    <div class="link-cards">
-      <a class="link-card" href="https://ester404.github.io/Cartilha_De_Autorizacao_Reparos/" target="_blank" rel="noopener">
-        <div class="lc-text"><strong>Autorização de Reparos Iniciais</strong><span>Passo a passo e modelo de e-mail</span></div>
-        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-
-  <div class="setor-panel" id="panel-reembolso">
-    <h4>Reembolso</h4>
-    <div class="link-cards">
-      <a class="link-card" href="https://ester404.github.io/Cartilha_De_Reembolso/" target="_blank" rel="noopener">
-        <div class="lc-text"><strong>Cartilha de Reembolso</strong><span>Roubo/furto, atendimento e modelos de análise</span></div>
-        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-
-  <div class="setor-panel" id="panel-despachante">
-    <h4>Despachante</h4>
-    <div class="link-cards">
-      <a class="link-card" href="https://ester404.github.io/Cartilha_De_Despachante/" target="_blank" rel="noopener">
-        <div class="lc-text"><strong>Cartilha de Despachante</strong><span>Multas, custos, veículos recuperados e indenizados</span></div>
-        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-
-  <div class="setor-panel" id="panel-atendimento">
-    <h4>Atendimento</h4>
-    <div class="link-cards">
-      <a class="link-card" href="https://ester404.github.io/Cartilha_De_Atendimento_Sinistro/" target="_blank" rel="noopener">
-        <div class="lc-text"><strong>Cartilha de Atendimento</strong><span>Perda parcial: abertura, cadastro no Hinova, regulagem e negociação</span></div>
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
