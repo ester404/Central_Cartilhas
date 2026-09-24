@@ -17,22 +17,27 @@ if (navHamburger && navLinks) {
 
 // ===== Seleção de setor (página de departamento) =====
 function selectSetor(id) {
-  // destaca o quadradinho selecionado
-  document.querySelectorAll('.setor-tile').forEach(tile => {
-    tile.classList.toggle('active-tile', tile.dataset.setor === id);
+  const tile = document.querySelector('.setor-tile[data-setor="' + id + '"]');
+  const alreadyOpen = tile ? tile.classList.contains('active-tile') : false;
+
+  // destaca o quadradinho selecionado (ou desmarca, se já estava aberto)
+  document.querySelectorAll('.setor-tile').forEach(t => {
+    t.classList.toggle('active-tile', !alreadyOpen && t.dataset.setor === id);
   });
 
-  // mostra só o painel correspondente
+  // mostra só o painel correspondente (ou fecha todos, se já estava aberto)
   document.querySelectorAll('.setor-panel').forEach(panel => {
-    panel.classList.toggle('open', panel.id === 'panel-' + id);
+    panel.classList.toggle('open', !alreadyOpen && panel.id === 'panel-' + id);
   });
 
-  // rola até o painel aberto
-  const openPanel = document.getElementById('panel-' + id);
-  if (openPanel) {
-    setTimeout(() => {
-      openPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 80);
+  // rola até o painel aberto, só quando estiver de fato abrindo
+  if (!alreadyOpen) {
+    const openPanel = document.getElementById('panel-' + id);
+    if (openPanel) {
+      setTimeout(() => {
+        openPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 80);
+    }
   }
 }
 
