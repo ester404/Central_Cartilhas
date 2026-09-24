@@ -364,6 +364,34 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif;margin:0;color:var(--wine);}
   stroke-width:2;
   transition:transform .15s ease;
 }
+.st-mini-links{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-top:auto;
+}
+.st-mini-links a{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  font-weight:700;
+  font-size:.85rem;
+  color:var(--tan);
+  background:var(--cream-row);
+  border-radius:8px;
+  padding:8px 10px;
+  transition:background .15s ease;
+}
+.st-mini-links a:hover{background:var(--border);}
+.st-mini-links a svg{
+  width:13px;height:13px;
+  stroke:var(--tan);
+  fill:none;
+  stroke-width:2;
+  flex-shrink:0;
+}
+.setor-tile-multi{cursor:default;}
 .dept-tile:not(.disabled):hover .dt-link svg,
 .setor-tile:hover .st-link svg{transform:translateX(4px);}
 
