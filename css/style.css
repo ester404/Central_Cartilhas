@@ -711,7 +711,7 @@ h1,h2,h3,h4{font-family:'Playfair Display',serif;margin:0;color:var(--wine);}
   border:1px solid var(--border);
   border-radius:18px;
   padding:28px 28px 26px;
-  margin:20px 0 30px;
+  margin:4px 0 28px;
   position:relative;
   z-index:1;
 }
